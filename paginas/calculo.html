@@ -6,7 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculo de Plazo FIjo</title>
 </head>
-<body>
-    
+<body style="margin: 2rem; background-color:rgb(78, 14, 14);">
+    <fieldset style="border-color: whitesmoke; display: inline-block;">
+      <input type="text" id="idNombre" />
+      <label for="idNombre" style="
+          color: skyblue;
+          font-weight: normal; 
+          font-family: Verdana, Geneva, Tahoma, sans-serif;"
+        >INGRESE SU NOMBRE DE USUARIO</label>
+      <br/>
+      <input type="text" id="idCapital" />
+      <label for="idCapital" style="
+          color:skyblue;
+          font-weight: bold;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;"
+        >INGRESE EL CAPITAL QUE DESEE INVERTIR</label>
+      <br/>
+      <input type="text" id="idPlazo" />
+      <label for="idPlazo" style="
+          color:skyblue;
+          font-weight: bold;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;"
+        >INGRESE EL PLAZO DE LA OPERACIÓN</label>
+      <br/>
+      <input type="button" value="CALCULAR" id="idBotonCalcular"
+        style="color: whitesmoke; background-color: black; border-color: whitesmoke; margin: 5px;"/>
+      <input type="radio" name="radio" id="radio1" checked>
+      <label for="" style="
+      color:white;
+      font-weight: bold;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+       ">EN PESOS</label>
+      <input type="radio" name="radio" id="radio2">
+      <label for="" style="
+      color:white;
+      font-weight: bold;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+      ">EN DÓLARES</label>
+      </fieldset>
+      <br />
+      <p id="idTexto1"
+        style="
+          font-family: Verdana, Geneva, Tahoma, sans-serif,
+            sans-serif;
+          font-weight: bold;
+          font-size: 1.8px; color: black; padding: 0.8rem;"></p>
+      <p id="idTexto2"
+        style="
+          font-family: Verdana, Geneva, Tahoma, sans-serif,
+            sans-serif;
+          font-weight: bold;
+          font-size: 1.8px; color: black; padding: 0.8rem; "></p>
+      <p id="idTexto3"
+        style="
+          font-family: Verdana, Geneva, Tahoma, sans-serif,
+            sans-serif;
+          font-weight: bold;
+          font-size: 1.8px; color: black; padding: 0.8rem;"></p>
+      <p id="idTexto4"
+        style="
+          font-family: Verdana, Geneva, Tahoma, sans-serif,
+            sans-serif;
+          font-weight: bold;
+          font-size: 1.8px; color: black; padding: 0.8rem;"></p>
+      <p id="idTexto5"
+        style="
+          font-family: Verdana, Geneva, Tahoma, sans-serif,
+            sans-serif;
+          font-weight: bold;
+          font-size: 2px; color: black; padding: 0.8rem;"></p>
+      <span id="idTexto6"
+        style="
+          font-family: Verdana, Geneva, Tahoma, sans-serif,
+            sans-serif;
+          font-weight: bold;
+          font-size: 2px; color: white; padding: 0.5rem; padding-left: 10%;"></span>
+  <script src="../js/index.js"></script>
 </body>
 </html>
