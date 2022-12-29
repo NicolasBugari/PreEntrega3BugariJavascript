@@ -9,7 +9,7 @@ class Operacion {
       this.resultado = (((this.capital * 0.67) / 12) * this.plazo).toFixed(2);
       localStorage.setItem("resultadoPlazoFijo", this.resultado); 
       } else {
-      this.resultado = (((this.capital * 0.6) / 12) * this.plazo).toFixed(2);
+      this.resultado = (((this.capital * 0.5) / 12) * this.plazo).toFixed(2);
       localStorage.setItem("resultadoPlazoFijo", this.resultado); 
       }
     }
@@ -37,7 +37,7 @@ operacion.calcularPlazoFijo(capitalIngresado, plazoIngresado);
     let texto5 = document.getElementById("idTexto5");
       texto5.innerHTML = `INTERESES GANADOS: $${resultado} (ARG)`;
     let texto6 = document.getElementById("idTexto6");
-      texto6.innerHTML = `Este es tu resultado en moneda nacional ==> ARG`;
+      texto6.innerHTML = `Este es tu resultado en moneda nacional ARG`;
       $("#idTexto6").hide();
       $("p").css({"background-color": "white"})
       $("p").animate({width: "48rem"})
@@ -67,7 +67,7 @@ operacion.calcularPlazoFijo(capitalIngresado, plazoIngresado);
     let texto5 = document.getElementById("idTexto5");
       texto5.innerHTML = `INTERESES GANADOS: $${resultado} (U$S)`;
     let texto6 = document.getElementById("idTexto6");
-      texto6.innerHTML = `Este es tu resultado en moneda extranjera ==> U$S`;
+      texto6.innerHTML = `Este es tu resultado en moneda extranjera U$S`;
       $("#idTexto6").hide();
       $("p").css({"background-color": "white"})
       $("p").animate({width: "48rem"})
