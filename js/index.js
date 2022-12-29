@@ -37,24 +37,8 @@ operacion.calcularPlazoFijo(capitalIngresado, plazoIngresado);
     let texto5 = document.getElementById("idTexto5");
       texto5.innerHTML = `INTERESES GANADOS: $${resultado} (ARG)`;
     let texto6 = document.getElementById("idTexto6");
-      texto6.innerHTML = `Este es tu resultado en moneda nacional ARG`;
-      $("#idTexto6").hide();
-      $("p").css({"background-color": "white"})
-      $("p").animate({width: "48rem"})
-      $('body').append('<p>Para operar en dólares, seleccione la opción "EN DÓLARES" y oprima calcular.</p>');
-      $("p:last").hide();
-      $("p").mouseenter(function(){
-        $("p").css({"color": "blue"})
-        $("#idTexto6").show()
-        $("p:last").show()
-        $("p:last").css({"margin-top":"2rem", "color":"white"});
-      })
-      $("p").mouseleave(function(){
-        $("p").css({"color": "black"})
-        $("#idTexto6").hide()
-        $("p:last").hide()
-      })
-} else {
+      texto6.innerHTML = `Este es tu resultado en moneda nacional ARG  Para obtener el resultado en moneda U$S debe seleccionar la opcion "EN DÓLARES"`;
+  } else {
     let texto1 = document.getElementById("idTexto1");
       texto1.innerHTML = ` ${operacion.nombre}, EL RESULTADO DE TU INVERSIÓN EN PLAZO FIJO ES EL SIGUIENTE:`;
     let texto2 = document.getElementById("idTexto2");
@@ -67,24 +51,10 @@ operacion.calcularPlazoFijo(capitalIngresado, plazoIngresado);
     let texto5 = document.getElementById("idTexto5");
       texto5.innerHTML = `INTERESES GANADOS: $${resultado} (U$S)`;
     let texto6 = document.getElementById("idTexto6");
-      texto6.innerHTML = `Este es tu resultado en moneda extranjera U$S`;
-      $("#idTexto6").hide();
-      $("p").css({"background-color": "white"})
-      $("p").animate({width: "48rem"})
-      $('body').append('<p>Para operar en pesos, seleccione la opción "EN PESOS" y oprima calcular.</p>');
-      $("p:last").hide(); 
-      $("p").mouseenter(function(){
-        $("p").css({"color": "green"})
-        $("#idTexto6").show()
-        $("p:last").show()
-        $("p:last").css({"margin-top":"2rem", "color":"white"});
-      })  
-      $("p").mouseleave(function(){
-        $("p").css({"color": "black"})
-        $("#idTexto6").hide()
-        $("p:last").hide()
-      })
-} localStorage.clear();   } 
+      texto6.innerHTML = `Este es tu resultado en moneda extranjera U$S Para obtener el resultado en moneda ARG debe seleccionar la opcion "EN PESOS"`;
+  } 
+  
+localStorage.clear();   } 
 
 let boton = document.getElementById("idBotonCalcular");
 boton.addEventListener("click", respuestaClick);
