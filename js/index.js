@@ -6,10 +6,10 @@ class Operacion {
       this.capital = capitalIngresado;
       this.plazo = plazoIngresado;
       if (document.getElementById("radio1").checked == true) {
-      this.resultado = (((this.capital * 0.067) / 12) * this.plazo).toFixed(2);
+      this.resultado = (((this.capital * 0.67) / 12) * this.plazo).toFixed(2);
       localStorage.setItem("resultadoPlazoFijo", this.resultado); 
       } else {
-      this.resultado = (((this.capital * 0.067) / 12) * this.plazo).toFixed(2);
+      this.resultado = (((this.capital * 0.6) / 12) * this.plazo).toFixed(2);
       localStorage.setItem("resultadoPlazoFijo", this.resultado); 
       }
     }
@@ -56,7 +56,7 @@ operacion.calcularPlazoFijo(capitalIngresado, plazoIngresado);
       })
 } else {
     let texto1 = document.getElementById("idTexto1");
-      texto1.innerHTML = `QUERIDO ${operacion.nombre}, EL RESULTADO DE TU INVERSIÓN EN PLAZO FIJO ES EL SIGUIENTE:`;
+      texto1.innerHTML = ` ${operacion.nombre}, EL RESULTADO DE TU INVERSIÓN EN PLAZO FIJO ES EL SIGUIENTE:`;
     let texto2 = document.getElementById("idTexto2");
       texto2.innerHTML = "CAPITAL INVERTIDO: U$S" + capitalIngresado + " (U$S)";
     let texto3 = document.getElementById("idTexto3");
