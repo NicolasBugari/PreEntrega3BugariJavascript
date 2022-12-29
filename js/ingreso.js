@@ -10,5 +10,5 @@ function ingresar() {
     } else {
       window.location = "./paginas/calculo.html";
     }
-  }
+}
   
